@@ -10,19 +10,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>alfa pro</title>
 </head>
-<body>
-    <section class="home">
+<body class="">
+    <main class=" min-h-screen  bg-[#010313] bg-[url(images/background.png)] bg-no-repeat bg-center">
+        <!-- home screen -->
+        <section id="home-screen" class=" min-h-screen text-white flex flex-col justify-center items-center ">
+            <div class="flex flex-col items-center gap-6">
+                <h1 class="text-8xl text-slate-100 uppercase">Alpha Clash Pro</h1>
+               <p>Unleash your keybord kun g fu : Press "Enter" to play</p>
+                <button onclick="play()" class="btn bg-white text-black">Play Now</button>
+            </div>
 
-    </section>
 
-    <section class="play-ground">
-
-    </section>
-
-    <section class="score">
-        
-    </section>
-
+        </section>
+        <!-- playground -->
     
+        <section id="play-ground" class=" hidden">
+            <div class="flex flex-col items-center gap-20 pt-20 ">
+                <!-- screen -->
+                <div class="artboard artboard-horizontal phone-6 border-[20px] rounded-2xl border-[#010313CC] bg-[#FFFFFFB3] flex justify-center "><div>
+                    <p class="bg-[#2F2941] text-white p-3 rounded-b-xl">dont watch keyboard while playing...</p>
+                </div>
+               <div class="flex justify-center items-center  h-full">
+                <p id="current-a" class="text-black text-9xl font-bold uppercase">Y</p>
+               </div>
+
+                </div>
+                <!-- keyboard start-->
+                <div>
+                    <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="q" class="kbd">q</kbd>
+                        <kbd id="w" class="kbd">w</kbd>
+                        <kbd id="e" class="kbd">e</kbd>
+                        <kbd id="r" class="kbd">r</kbd>
+                        <kbd id="t" class="kbd">t</kbd>
+                        <kbd id="y" class="kbd">y</kbd>
+                        <kbd id="u" class="kbd">u</kbd>
+                        <kbd id="i" class="kbd">i</kbd>
+                        <kbd id="o" class="kbd">o</kbd>
+                        <kbd id="p" class="kbd">p</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="a" class="kbd">a</kbd>
+                        <kbd id="s" class="kbd">s</kbd>
+                        <kbd id="d" class="kbd">d</kbd>
+                        <kbd id="f" class="kbd">f</kbd>
+                        <kbd id="g" class="kbd">g</kbd>
+                        <kbd id="h" class="kbd">h</kbd>
+                        <kbd id="j" class="kbd">j</kbd>
+                        <kbd id="k" class="kbd">k</kbd>
+                        <kbd id="l" class="kbd">l</kbd>
+                      </div> 
+                      <div class="flex justify-center gap-1 my-1 w-full">
+                        <kbd id="z" class="kbd">z</kbd>
+                        <kbd id="x" class="kbd">x</kbd>
+                        <kbd id="c" class="kbd">c</kbd>
+                        <kbd id="v" class="kbd">v</kbd>
+                        <kbd id="b" class="kbd">b</kbd>
+                        <kbd id="n" class="kbd">n</kbd>
+                        <kbd id="m" class="kbd">m</kbd>
+                        <kbd id="/" class="kbd">/</kbd>
+                      </div>
+                </div>
+                <!-- keybord end -->
+                <!-- life -->
+                <div class="flex justify-between w-2/3">
+                    <button class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                        Button
+                      </button>
+
+                      <button class="btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" /></svg>
+                        Button
+                      </button>
+                    
+
+
+                </div>
+            </div>
+    
+        </section>
+    
+        <section class="score flex justify-center items-center min-h-screen hidden">
+            <div class="text-white text-center space-y-6 bg-[#FFFFFF33] p-4 rounded-lg">
+                <h1 class="text-8xl">
+                    <span class="font-semibold">Score</span>
+                    <span>:14</span>
+                </h1>
+
+                <button class="btn">Play Again</button>
+                <p>practice will make pro</p>
+               
+            </div>
+            
+        </section>
+    </main>
+     <script src="scriptss/utility.js"></script>
+    <script src="scriptss/paly.js"></script>
 </body>
 </html>
